@@ -1,5 +1,5 @@
 import { ErrorMessage, Field } from "formik";
-import ShowWErrorField from "./ShowErrorField";
+import ShowErrorField from "./ShowErrorField";
 
 export default function FormGroupText(props: formGroupsTextProps) {
   return (
@@ -8,7 +8,7 @@ export default function FormGroupText(props: formGroupsTextProps) {
       <Field name={props.field} className="form-control" 
       placeholder={props.placeholder}/>
       <ErrorMessage name={props.field}>
-        {(message) => <ShowWErrorField message={message}/>}
+        {(message) => <ShowErrorField message={message}/>}
       </ErrorMessage>
     </div>
   );

@@ -1,4 +1,4 @@
-export default function ShowWErrorField(props:showErrorFieldProps){
+export default function ShowErrorField(props:showErrorFieldProps){
     return(
         <div className="text-danger">{props.message}</div>
     )
