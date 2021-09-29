@@ -4,6 +4,7 @@ import * as Yup from 'yup';
 import FormGroupText from "../utils/FormGroupText";
 import Button from "../utils/Button";
 import { Link } from "react-router-dom";
+import Map from "../utils/Map";
 
 export default function FormCinemas(props:formCinemasProps){
     return(
@@ -17,6 +18,9 @@ export default function FormCinemas(props:formCinemasProps){
             {(formikProps) => (
                 <Form>
                     <FormGroupText label="Nombre" field="name" />
+                    <div style={{marginBottom: '1rem'}}> 
+                        <Map />
+                    </div>
                     <Button disabled={formikProps.isSubmitting} type="submit">Salvar</Button>
                     <Link className="btn btn-secondary" to="/cinemas">Cancelar</Link>
                 </Form>
