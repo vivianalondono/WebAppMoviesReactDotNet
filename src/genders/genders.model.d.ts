@@ -2,7 +2,7 @@ export interface genderCreationDTO {
     name: string;
 }
 
-export interface generoDTO {
+export interface genderDTO {
     id: number;
     name: string;
 }

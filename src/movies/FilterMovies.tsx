@@ -1,5 +1,5 @@
 import { Field, Form, Formik } from "formik";
-import { generoDTO } from "../genders/genders.model";
+import { genderDTO } from "../genders/genders.model";
 import Button from "../utils/Button";
 
 export default function FilterMovies(){
@@ -10,7 +10,7 @@ export default function FilterMovies(){
         inCinemas: false
     } 
 
-    const genders: generoDTO[] = [{id: 1, name: 'Acción'}, {id:2, name:'Comedia'}]
+    const genders: genderDTO[] = [{id: 1, name: 'Acción'}, {id:2, name:'Comedia'}]
 
     return(
         <>
