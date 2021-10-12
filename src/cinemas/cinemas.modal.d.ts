@@ -3,3 +3,10 @@ export interface cinemaCreationDTO{
     latitude?: number;
     length?: number;
 }
+
+export interface cinemaDTO{
+    id: number;
+    name: string;
+    latitude?: number;
+    length?: number;
+}
